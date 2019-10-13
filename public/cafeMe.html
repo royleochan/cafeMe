@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="cafeMe.css">
+    </head>
+    <header id = "header">
+        <h1>cafeMe<img src = "https://i.imgur.com/brj9gcV.jpg" alt = "latte-art" id = 'header-img'></h1>
+        <nav id = 'nav-bar'>
+            <p>
+                <a href = "#features" class = 'nav-link'>Features</a>
+                <a href = "#video" class = 'nav-link'>How It Works</a>
+                <a href = "#pricing" class = 'nav-link'>Pricing</a>
+            </p>
+        </nav>
+    </header>
+    
+    <main>
+        <iframe width = '420' height = '315' id = "video" src = "https://www.youtube.com/embed/9r09e4xZie4?controls=1"></iframe>
+
+        <form id = "form" action = "https://www.freecodecamp.com/email-submit">
+            <label for = "email" style="font-size:30px;">Relax, unwind with cafeMe</label>
+            <br>
+            <br>
+            <input type = "email" id = "email" name = "email" placeholder = "Enter your email address" style="font-size: 20px;">
+            <br>
+            <br>
+            <input type = 'submit' id = "submit" value = "GET STARTED" width = "100" height = "100" style="font-weight: bold;background-color:lightcoral;font-size: 20px;width:auto;height:50px">
+        </form>
+
+        <div class = 'container'>
+            <section id = 'central'>
+                <h2 style="background-color: lightblue">Cafes near central area</h2>
+                <p> 
+                    <ol>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                    </ol>
+                </p>
+                <button type="button" style="background-color:lightcoral;font-size:20px;text-align:center">Order Now!</button>
+            </section>
+            
+            <section id = 'west'>
+                <h2 style="background-color: lightblue"> Cafes near the west</h2>
+                <p>
+                    <ol>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                    </ol>
+                </p>
+                <button type="button" style="background-color:lightcoral;font-size:20px;text-align:center">Order Now!</button>
+            </section>
+
+            <section id = 'east'>
+                <h2 style="background-color: lightblue">Cafes near the east</h2>
+                <p>
+                    <ol>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                    </ol>
+                </p>
+                <button type="button" style="background-color:lightcoral;font-size:20px;text-align:center">Order Now!</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Privacy Terms Contact
+        </p>
+        <p style="color:darkslategrey">
+            Copyright 2019, cafeMe
+        </p>
+    </footer>
+
+</html>
+
+
+<!-- <script>
+    // Create Vue instance
+    new Vue({
+        el: '#app', // tell vue which DOM it is associated with
+
+        data (){ // one of many vue properties, data property is used to hold "reactive" variables
+            return {
+                title: '',
+                principle: 100,
+                interest: 4,
+                rate: 10,
+                userName: ''
+            }
+        },
+
+        computed: { //computed properties: advanced variables
+            simpleInterest(){
+                return ((this.principle * this.interest * this.rate)/100)
+            }
+        },
+
+        methods: { //methods properties used to perform certain set of actions like validation
+            validateUsername(){
+                if (this.userName.length > 8) {
+                    alert('Hello User ',this.userName)
+                }
+                else {
+                    alert('Username must be longer than 8 characters')
+                }
+            }
+        }
+    })
+</script> -->

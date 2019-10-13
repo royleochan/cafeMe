@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="P.Floristry.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="Roy">
+    </head>
+    <header id = "header">
+        <h1 style = "font-family: Snell Roundhand;">P.Floristry</h1>
+        <nav id = "nav-bar">
+            <ul>
+                <li><a href = #features>Features</a></li>
+                <li><a href = #how>How It Works</a></li>
+                <li><a href = #pricing>Pricing</a></li>
+                <li><a href = #location>Location</a></li>
+                <li>
+                    <img src="https://i.imgur.com/uRCCMbz.png" title="source: imgur.com" id = "login-trigger" onclick = "loginFunction()" class = 'login'>
+                    <div id = 'my-dropdown' class = 'login-content'>
+                        <form>
+                            <fieldset id="inputs">
+                                <input id="username" type="email" name="Email" placeholder="Your email address" required>   
+                                <input id="password" type="password" name="Password" placeholder="Password" required>
+                            </fieldset>
+                            <fieldset id="actions">
+                                <input type="submit" id="sign-in" value="Sign In">
+                                <label><input type="checkbox" id="checkbox" checked="checked"> Keep me signed in</label>
+                            </fieldset>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id = "form" action = "https://www.freecodecamp.com/email-submit">
+            <label for = "email" style="font-size:30px;">Hand-Crafted, home-made masterpieces</label>
+            <br>
+            <br>
+            <input type = "email" id = "email" name = "email" placeholder = "Enter your email address" style="font-size: 15px;width:180px;">
+            <br>
+            <br>
+            <input type = 'submit' id = "submit" value = "GET STARTED">
+        </form>
+
+        <div id = "features">
+            <p>
+                <h2>Premium Materials</h2>
+                Our flowers are made of soft yet resistant paper materials that create realistic yet durable paper flowers.
+            </p>
+            <p>
+                <h2>Fast Delivery</h2>
+                We make sure you receive the flowers as soon as we are finished making it. We also offer free returns if the flowers are unsatisfactory.
+            </p>
+            <p>
+                <h2>Quality Assurance</h2>
+                For every purchase you make, we ensure that the flowers are meticulously hand-crafted and checked thoroughly for any creases
+                or damages before you receive them.
+            </p>
+        </div>
+
+        <div id = "how">
+            <iframe width = '420' height = '315' id = "video" src = "https://www.youtube.com/embed/A_WCJ1bX6lI?controls=1"></iframe>
+        </div>
+
+        <div id = "pricing">
+            <div id="small" style = "font-family: Snell Roundhand;">
+                <h3>Small Bouquets</h3>
+                <h2 style = "font-weight:bold">$20 - $39</h2>
+                Asiatic Lily
+                <br>
+                Baby's Breath
+                <br>
+                Begonia
+                <br>
+                <a href="http://localhost:3000/orderNow.html" id = 'order-now'>Order Now!</a>
+            </div>
+            <div id="medium" style = "font-family: Snell Roundhand;">
+                <h3>Medium Bouquets</h3>
+                <h2 style = "font-weight:bold">$39 - $50</h2>
+                Alstroemeria
+                <br>
+                Peruvian Lily
+                <br>
+                Anemone
+                <br>
+                <a href="http://localhost:3000/orderNow.html" id = 'order-now'>Order Now!</a>
+            </div>
+            <div id="large" style = "font-family: Snell Roundhand;">
+                <h3>Large Bouquets</h3>
+                <h2 style = "font-weight:bold">> $50</h2>
+                Calla Lily
+                <br>
+                Cockscomb
+                <br>
+                Cyclamen
+                <br>
+                <a href="http://localhost:3000/orderNow.html" id = 'order-now'>Order Now!</a>
+        </div>
+
+        <div id = 'location'></div>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMIiM0bxXWcRnpWM6hbdFkzD3prsNmSUc&callback=initMap"></script>
+    </main>
+
+    <div>
+        <script>
+            const max = 57;
+            let actual = max - 13;
+            let percentage = actual/max;
+        </script>
+    </div>
+
+    <footer>
+        <p>
+            Privacy Terms Contact
+        </p>
+        <p>
+            Copyright 2019, P.Floristry
+        </p>
+    </footer>
+</html>
+
+
+
+<script src = main.js></script>
+

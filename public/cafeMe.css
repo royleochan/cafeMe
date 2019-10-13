@@ -1,0 +1,71 @@
+#header {
+    font-family: Verdana;
+    position: fixed;
+    top: 0;
+}
+
+html {
+    background-color: bisque;
+}
+
+body {
+    font-family: Arial;
+}
+#nav-bar {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    color: #51EADB;
+    left: 1400px;
+}
+
+#video {
+    padding: 10px;
+    display: grid;
+    position: relative;
+    left: 35%;
+}
+
+#form {
+    padding:10px;
+    text-align:center;
+}
+
+#submit {
+    width: 100px;
+    text-align:center;
+}
+
+#email{
+    width: 270px;
+    text-align:center;
+}
+
+#header-img {
+    width:25px;
+    height:25px;
+}
+
+@media (min-height: 300px) {
+    #nav-bar {
+        padding: 10px;
+    }
+}
+
+.container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px;
+    position: relative;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+        "header header header"
+        "content content content";
+}
+
+footer {
+    background-color: darkgray;
+    width: 70%;
+    margin: 0 auto;
+    text-align: right;
+}

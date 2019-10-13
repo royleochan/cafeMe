@@ -1,0 +1,198 @@
+html {
+    background-color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0;
+    overflow:hidden;
+    display: inline;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+ }
+
+li a:hover {
+    color:salmon;
+}
+
+#login-trigger {
+    width:25px;
+    height:25px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+#submit:hover {
+    background-color:lightpink;
+}
+
+#order-now:hover {
+    background-color:lightpink;
+}
+
+#header {
+    font-family: Verdana;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-column-gap: 1150px;
+    align-items: start;
+}
+
+main{
+    margin-top:100px;
+}
+
+form{
+    text-align:center;
+}
+
+/* center div */
+#features {
+    margin: auto;
+    width: 50%;
+}
+
+#how {
+    position: relative;
+    left: 35%;
+    top: 45px;
+}
+
+#pricing {
+    position:relative;
+    top: 400px;
+    display:grid;
+    margin-top: 80px;
+    margin-left:18%;
+    grid-template-columns: 300px 300px 300px;
+    grid-column-gap: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    align-items:start;
+}
+
+/* making prices responsive */
+@media only screen and (max-width: 1200px) {
+    #pricing {
+        right: 100px;
+    }
+}
+
+#small {
+    border: 1px solid salmon;
+    padding-bottom: 15px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align:center;
+    line-height:30px;
+}
+
+#medium {
+    border: 1px solid salmon;
+    padding-bottom: 15px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    line-height:30px;
+}
+
+#large {
+    border: 1px solid salmon;
+    padding-bottom: 15px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+    line-height:30px;
+}
+
+h3 {
+    background-color:lightgray;
+    font-size:20px;
+}
+
+#order-now {
+    font-size: 20px;
+    font-style: oblique;
+    font-family: sans-serif;
+    text-decoration: none;
+    color:black;
+    display:inline-block;
+    padding: 10px 15px;
+    background-color: salmon;
+}
+
+#submit {
+    font-weight: bold;
+    background-color:lightcoral;
+    font-size: 20px;
+    width:auto;
+    height:40px
+}
+
+footer {
+    position:relative;
+    top: 600px;
+    background-color: lightgray;
+    width: 70%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.login-content {
+    display: none;
+    border-color: black;
+
+}
+
+.show {
+    display:block;
+}
+
+#checkbox {
+    font-size: 10px;
+}
+
+#sign-in {
+    background-color: salmon;
+}
+
+/* makes video responsive */
+#video {
+    position: absolute;
+}
+
+#how {
+    position: relative;
+    height: 0;
+}
+
+/* hides horizontal scrollbar */
+body {
+    overflow-x: hidden;
+}
+
+/* google maps */
+#location {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 200px;
+    top: 80px;
+}
